@@ -1,0 +1,107 @@
+/* Futuristic Login Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(ellipse at center, #0f0f0f, #1a1a1a);
+  color: #ffffff;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  backdrop-filter: blur(5px);
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 60px 50px;
+    width: 500px; /* increased width */
+    max-width: 90%;
+    box-shadow: 0 0 25px #00f7ff88, 0 0 80px #00ffe077;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+
+  .login-title {
+    font-size: 36px; /* larger title */
+    color: #00ffe0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+  .login-subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #bbb;
+  }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input {
+  padding: 16px 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-input:focus {
+  box-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0aa;
+}
+
+.login-button {
+  background: linear-gradient(to right, #00ffe0, #00f7ff);
+  color: #000;
+  font-weight: 16px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #00f7ff, #00ffe0);
+  box-shadow: 0 0 15px #00ffe0aa;
+  transform: translateY(-2px);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #aaa;
+}
+
+.signup-link a {
+  color: #00ffe0;
+  text-decoration: none;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

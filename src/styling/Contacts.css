@@ -1,0 +1,121 @@
+/* General Styles */
+.contacts-wrapper {
+    padding: 30px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Updated gradient */
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slightly darker shadow for contrast */
+  }
+  
+  .contacts-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff; /* Ensure the heading stands out */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .input-field {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the input fields */
+    color: #fff; /* White text on the inputs */
+  }
+  
+  .input-field:focus {
+    border-color: #ff4081; /* Focus border color to stand out */
+  }
+  
+  .add-contact-btn {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #ff4081; /* Soft pink to contrast with dark background */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-contact-btn:hover {
+    background-color: #e40062; /* Darker pink on hover */
+  }
+  
+  .contacts-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure the subheading is visible */
+  }
+  
+  .no-contacts-text {
+    font-size: 1.2rem;
+    color: #ffeb3b; /* Yellow for emphasis */
+    text-align: center;
+  }
+  
+  .contacts-list ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+  }
+  
+  .remove-btn {
+    padding: 8px 15px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e40062; /* Darker pink on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contacts-wrapper {
+      padding: 20px;
+    }
+  
+    .contacts-heading {
+      font-size: 1.5rem;
+    }
+  
+    .contact-form .input-field {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .add-contact-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

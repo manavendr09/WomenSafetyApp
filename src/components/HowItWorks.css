@@ -1,0 +1,90 @@
+.timeline-container {
+    position: relative;
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+    z-index: 1;
+    border-radius: 2px;
+  }
+  
+  .timeline-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px 0;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 20px rgba(255, 126, 179, 0.1);
+  }
+  
+  .timeline-item.left {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+  
+  .timeline-item.right {
+    align-self: flex-end;
+    margin-right: 0;
+  }
+  
+  .timeline-item .dot {
+    width: 16px;
+    height: 16px;
+    background: #ff7eb3;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    box-shadow: 0 0 10px #ff7eb3;
+  }
+  
+  .timeline-item.left .dot {
+    left: -35px;
+  }
+  
+  .timeline-item.right .dot {
+    right: -35px;
+  }
+  
+  .content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffd6db;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right {
+      align-self: center;
+    }
+  
+    .timeline-item .dot {
+      left: -25px;
+      right: auto;
+    }
+  }
+  
